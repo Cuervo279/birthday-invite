@@ -1,0 +1,237 @@
+body {
+    overflow: hidden;
+}
+
+p { margin: 10px;}
+
+.inv_base {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    perspective: 2000px;
+}
+
+.mirror {
+    background-color: rgb(255, 223, 223);
+    transform: rotateY(0deg);
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    transform-origin: 0% 0;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.page1 {
+    background-color: #feffe0;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    transform-origin: 0% 0;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 27px -11px rgba(0,0,0,0.75);
+    z-index: 1;    
+}
+
+.page2{
+    background-color: #d8f8ff;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 27px -11px rgba(0,0,0,0.75);
+    z-index: 0;
+}
+
+.happy_b {
+    text-align: center;
+    font-family: "Delicious Handrawn";
+    font-size: 40px;
+    -webkit-text-stroke: 0.7px rgb(0, 0, 0);
+    background: linear-gradient(to right,  	
+    #B4ECF9 30%,	
+    #FAFDAE 60%,  	
+    #FF99D8 90%,
+    #B4ECF9 100%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+
+}
+
+.b_name {
+    text-align: center;
+    font-family: "Pacifico";
+    font-size: 60px;
+}
+
+.c_name {
+    text-align: center;
+    font-family: "Pacifico";
+    font-size: 100px;
+    position: relative;
+    top: 20px;
+    background: linear-gradient(to right,  	
+    #FF99D8 30%,	
+    #ff009d 60%,  	
+    #FF99D8 90%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+}
+
+.invite {
+    text-align: center;
+}
+
+.date   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inv_date {
+    font-family: "Nanum Pen Script";
+    font-size: 60px;
+}
+
+.address {
+    font-family: "Delicious Handrawn";
+    font-size: 30px;
+}
+
+#month {
+    font-family: "Architects Daughter";
+    font-size: 30px;
+}
+
+#day {
+    font-family: "Pacifico";
+    font-size: 60px;
+    position: relative;
+    top: -10px;
+}
+
+#year {
+    font-family: "Architects Daughter";
+    font-size: 30px;
+}
+
+#splash{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+#zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: rotateZ(-5deg) scale(1.1);
+    transition: 400ms linear;
+}
+
+#zoom_1:hover, #zoom_1:disabled img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    transition: 400ms linear;
+}
+
+#avatar {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transform: rotateY(-180deg);
+}
+
+#me {
+    width: 250px;
+    height: 100px;
+    transform: rotateY(-180deg) rotateZ(-20deg);
+}
+
+#page1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p.b_name:hover, p.b_name:active {
+    font-size: 64px;
+    transform: rotateZ(-5deg);
+    transition: 150ms linear;
+}
+
+p.happy_b:hover, p.happy_b:active {
+    font-size: 42px;
+    transform: rotateZ(5deg);
+    transition: 150ms linear;
+}
+
+.scrolling-image-container {
+    position: relative;
+    overflow: hidden;
+    z-index: -100;
+  }
+
+.scrolling-image {
+    background: url('cute_bg3.png') repeat ;
+    height: 75000px;
+    width: 75000px;
+    animation: slide 240s linear infinite
+  }
+
+.prevent-select {
+  user-select: none; 
+}
+
+.vl {
+  border-left: 2px solid #FF99D8;
+  height: 60px;
+}
+
+.turn {
+    animation: flip_left 2s forwards;
+}
+
+.turn_r {
+    animation: flip_right 2s forwards;
+}
+
+@keyframes flip_left {
+    0% {transform: translate(-50%, -50%) rotateX(0deg) rotatey(0deg);} 
+    100% {transform: translate(-50%, -50%) rotateX(0deg) rotatey(-180deg); z-index: 1;}
+}
+
+@keyframes flip_right {
+    0% {transform: translate(-50%, -50%) rotateX(0deg) rotatey(-180deg); z-index: 1;}
+    100% {transform: translate(-50%, -50%) rotateX(0deg) rotatey(0deg);}
+    
+}
+
+@keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-3840px,-3840px); /* The image width */
+    }
+  }
+
+
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
