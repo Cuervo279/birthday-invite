@@ -5,50 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Delicious+Handrawn&family=Architects+Daughter&family=Nanum+Pen+Script&display=swap"">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
     <header>
-
-        
+        <nav class="navbar">
+            <div class="nav_container">
+                <p>Birthday Invite Project</p>
+                <div class="socialLinks" >
+                    <a href="https://github.com/Cuervo279">
+                        <i id="fa" class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/leonardo-bastos-da-silva-9a032541/">
+                        <i class="fa fa-linkedin-square" aria-hidden="true" ></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <section class="inv_base prevent-select" id="card">
-        <div class="mirror" id="mirror">
-            <div id="zoom">
-            <img id="splash" src="splash.png" alt="Um unicórnio entre balões">
-            </div>
-            <p class="happy_b">Happy Birthday!</p>
-            <p class="b_name">Olivia</p>  
-        </div>
-        <div class="page1" id="page1">
-            <img id="me" src="me.png" alt="Hey it's me!">
-            <div id="zoom_1">
-                <img id="avatar" src="pic.png" alt="Imagem gerada pela IA Bing by Microsoft">
-            </div>
-        </div>
-        <div class="page2" id="page2">
-            <div class="invite">
-            <p class="c_name">Olivia</p>
-            <p class="inv_date">is turning 8</p>
-            <div class="date">
-                <p id="month"></p>
-                <div class="vl"></div>
-                <p id="day"></p>
-                <div class="vl"></div>
-                <p id="year"></p> 
-            </div>
-            <p class="address">123 Bla Bla Bla St. <br> Cityville, ST 12345</p>
-            <p class=""></p>   
-        </div>
-    </section>
 
-    <div class="book">
-        <span class="cover"></span>
-        <span class="cover turn"></span>
-    </div>
+    <main>
+        <section class="inv_base prevent-select" id="card">
+            <div class="mirror" id="mirror">
+                <div id="zoom">
+                <img id="splash" src="splash.png" alt="Um unicórnio entre balões">
+                </div>
+                <p class="happy_b">Happy Birthday!</p>
+                <p class="b_name">Olivia</p>  
+            </div>
+            <div class="page1" id="page1">
+                <img id="me" src="me.png" alt="Hey it's me!">
+                <div id="zoom_1">
+                    <img id="avatar" src="pic.png" alt="Imagem gerada pela IA Bing by Microsoft">
+                </div>
+            </div>
+            <div class="page2" id="page2">
+                <div class="invite">
+                <p class="c_name">Olivia</p>
+                <p class="inv_date">is turning 8</p>
+                <div class="date">
+                    <p id="month"></p>
+                    <div class="vl"></div>
+                    <p id="day"></p>
+                    <div class="vl"></div>
+                    <p id="year"></p> 
+                </div>
+                <p class="address">123 Bla Bla Bla St. <br> Cityville, ST 12345</p>
+                <p class=""></p>   
+            </div>
+        </section>
+    </main>
+    
     <div class="scrolling-image-container">
         <div class="scrolling-image"></div>
     </div>
     
+    <footer class="footer">
+        <p class="creator">Create by <a class="focus" href="https://cuervo279.github.io/index.html">Leonardo Cuervo</a> for <a class="focus" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Angela Yu</a>'s Web Developer Bootcamp</p>
+
+    </footer>
 </body>
 <script src="app.js"></script>
 </html>
