@@ -30,7 +30,7 @@ let d = new Date();
 let monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN",
 "JUL", "AUG", "SET", "OCT", "NOV", "DEC"
 ];
-let day = d.getDay()
+let day = d.getDate()
 let year = d.getFullYear();
 let month = monthNames[d.getMonth()];
 let formattedDate = month + 
